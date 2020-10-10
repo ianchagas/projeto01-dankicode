@@ -1,3 +1,5 @@
+<?php include('config.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição do nosso site">
     <meta name="keywords" content="palavra-chave, do, site, teste, projeto">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link href="estilo/css/style.css" rel="stylesheet">
+    <link href="<?php echo INCLUDE_PATH; ?>estilo/css/style.css" rel="stylesheet">
     <title>Projeto 01</title>
 </head>
 
@@ -17,10 +19,10 @@
             <div class="logo left"><a href="/">Logomarca</a></div> <!-- logo -->
             <nav class="desktop right">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
 
@@ -29,10 +31,10 @@
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
         <div class="clear"></div> <!-- limpa sobreposição do left/right para background aparecer -->
@@ -59,7 +61,7 @@
             </div> <!-- w50 -->
             <div class="w50 left">
                 <!-- Pega imagem do autor -->
-                <img class="right" src="estilo/images/foto.jpg">
+                <img class="right" src="<?php echo INCLUDE_PATH; ?>estilo/images/foto.jpg">
             </div> <!-- w50 -->
             <div class="clear"></div>
         </div> <!-- fecha center cria contexto para responsivo -->
@@ -131,6 +133,6 @@
     </footer> <!-- fecha rodapé -->
     <!--importa jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
 </body>
 </html>
