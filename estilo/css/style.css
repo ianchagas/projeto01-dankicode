@@ -7,6 +7,11 @@
 
 /* Boot CSS */
 
+html,body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
 img {
     width: 100%;
     max-width: 325px;
@@ -261,6 +266,52 @@ footer p {
     text-align: center;
     font-weight: 400;
     font-size: 16px;
+}
+
+section.erro-404 {
+    text-align: center;
+    transform: translateY(-50%);
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+
+section.erro-404 h1 {
+    font-size: 60px;
+}
+
+section.erro-404 h2 {
+    color: #333;
+    font-weight: 400;
+}
+
+section.erro-404 p{
+    color: #444;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+section.erro-404 button {
+    width: 16%;
+    height: 60px;
+    margin-top: 5px;
+    background: #00C59E;
+    cursor: pointer;
+    font-size: 23px;
+    border: 0;
+}
+
+section.erro-404 a {
+    color:white;
+    text-decoration: none;
+}
+
+footer.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
